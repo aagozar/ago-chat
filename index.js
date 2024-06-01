@@ -5,8 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		e.preventDefault();
 		const message = document.getElementById("message-input").value;
 		const messageElement = document.createElement("div");
-		messageElement.classList.add("chat-bubble");
 		messageElement.classList.add("m-1");
+		messageElement.classList.add("bg-gray-200");
+		messageElement.classList.add("w-fit");
+		messageElement.classList.add("px-3");
+		messageElement.classList.add("rounded-full");
 		messageElement.textContent = message;
 		document
 			.getElementById("messages-container")
