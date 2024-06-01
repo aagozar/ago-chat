@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		e.preventDefault();
 		const message = document.getElementById("message-input").value;
 		const messageElement = document.createElement("div");
+		messageElement.classList.add("chat-bubble");
+		messageElement.classList.add("m-1");
 		messageElement.textContent = message;
 		document
 			.getElementById("messages-container")
@@ -15,5 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		setTimeout(() => {
 			messageElement.remove(); // Remove the message after 5 seconds.
 		}, 7000);
+
+		console.log("hello");
 	});
 });

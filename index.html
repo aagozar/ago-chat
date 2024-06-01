@@ -4,17 +4,18 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ago Chat</title>
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./dist/output.css" />
 	</head>
 	<body>
 		<div id="messages-container"></div>
-
-		<form id="main-form">
+		<form id="main-form" autocomplete="off" class="">
 			<input
 				id="message-input"
 				name="message-input"
-				type="text"
-				placeholder="Write here..."
+				type="text-area"
+				onblur="this.focus()"
+				autofocus
+				class="chat-bubble border-none outline-none w-fit m-1"
 			/>
 		</form>
 	</body>
