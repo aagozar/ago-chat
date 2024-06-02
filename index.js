@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		messageElement.classList.add("bg-gray-200");
 		messageElement.classList.add("w-fit");
 		messageElement.classList.add("px-3");
+		messageElement.classList.add("py-1");
 		messageElement.classList.add("rounded-full");
 		messageElement.textContent = message;
 		document
