@@ -11,7 +11,9 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
+	<body
+		class="w-screen h-screen flex flex-col justify-end selection:bg-gray-400 subpixel-antialiased"
+	>
 		<div id="messages-container"></div>
 		<!-- <div class="bg-gray-200 w-fit px-3 m-1 rounded-full">Test Message!</div> -->
 		<form id="main-form" autocomplete="off" class="">
@@ -22,7 +24,7 @@
 				onblur="this.focus()"
 				autofocus
 				spellcheck="false"
-				class="bg-gray-200 px-3 py-1 rounded-full border-none outline-none w-fit m-1"
+				class="bg-gray-200 px-3 py-1 rounded-full border-none outline-none w-fit m-1 caret-slate-500"
 			/>
 		</form>
 	</body>

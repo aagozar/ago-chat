@@ -5,3 +5,9 @@
 * {
 	font-family: "SF Pro Display", sans-serif;
 }
+
+.messageElement {
+    opacity: 1;
+    -webkit-transition: opacity 1000ms linear;
+    transition: opacity 1000ms linear;
+}

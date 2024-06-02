@@ -4,7 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.getElementById("main-form").addEventListener("submit", (e) => {
 		e.preventDefault();
 		const message = document.getElementById("message-input").value;
+
+		if (message === "") {
+			return;
+		}
+
 		const messageElement = document.createElement("div");
+		messageElement.classList.add("messageElement");
 		messageElement.classList.add("m-1");
 		messageElement.classList.add("bg-gray-200");
 		messageElement.classList.add("w-fit");
@@ -19,9 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		document.getElementById("message-input").value = "";
 
 		setTimeout(() => {
-			messageElement.remove(); // Remove the message after 5 seconds.
-		}, 7000);
-
-		console.log("hello");
+			messageElement.style.opacity = 0;
+			//messageElement.remove(); // Remove the message after 5 seconds.
+		}, 15000);
 	});
 });
